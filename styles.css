@@ -3,13 +3,14 @@
   padding: 0;
   box-sizing: border-box;
   font-family: sans-serif;
-}
 
 body {
-  background: #fff;
-  color: #333;
+    background: linear-gradient(to bottom, pink 50%, white 50%);
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
 }
-
 header {
   background: tomato;
   color: #fff;
