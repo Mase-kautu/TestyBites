@@ -1,0 +1,119 @@
+html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Delicious Bites - Menu</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fff0f5;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #ff66b2;
+            padding: 1em;
+            text-align: center;
+            color: white;
+        }
+        .menu-container {
+            padding: 30px;
+            max-width: 900px;
+            margin: auto;
+        }
+        .menu-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 30px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+        .menu-item img {
+            width: 200px;
+            height: auto;
+            object-fit: cover;
+        }
+        .menu-info {
+            padding: 20px;
+        }
+        .menu-info h3 {
+            margin-top: 0;
+            color: #ff3399;
+        }
+        .menu-info p {
+            margin: 8px 0;
+        }
+        .price {
+            font-weight: bold;
+            color: #444;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Our Menu</h1>
+        <nav>
+            <a href="index.html" style="color:white; text-decoration:underline;">← Back to Home</a>
+        </nav>
+    </header>
+
+    <div class="menu-container">
+        <div class="menu-item">
+            <img src="cheese burger.jpg" alt="Cheese Burger">
+            <div class="menu-info">
+                <h3>Cheese Burger</h3>
+                <p>Juicy grilled beef with melted cheese and fresh toppings.</p>
+                <p class="price">$5.99</p>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="pizza.jpg" alt="Margherita Pizza">
+            <div class="menu-info">
+                <h3>Margherita Pizza</h3>
+                <p>Classic pizza with mozzarella, basil, and tomato sauce.</p>
+                <p class="price">$7.99</p>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="wings.jpg" alt="Spicy Wings">
+            <div class="menu-info">
+                <h3>Spicy Chicken Wings</h3>
+                <p>Crispy wings tossed in our signature hot sauce.</p>
+                <p class="price">$6.49</p>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="wrap.jpg" alt="Veggie Wrap">
+            <div class="menu-info">
+                <h3>Veggie Wrap</h3>
+                <p>Healthy wrap with grilled veggies and hummus.</p>
+                <p class="price">$4.99</p>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="milkshake.jpg" alt="Chocolate Milkshake">
+            <div class="menu-info">
+                <h3>Chocolate Milkshake</h3>
+                <p>Rich and creamy shake topped with whipped cream.</p>
+                <p class="price">$3.99</p>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="fries.jpg" alt="French Fries">
+            <div class="menu-info">
+                <h3>French Fries</h3>
+                <p>Golden, crispy fries served with a side of ketchup.</p>
+                <p class="price">$2.99</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
