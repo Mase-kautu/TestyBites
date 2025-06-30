@@ -1,53 +1,95 @@
-<style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #C71585;
-            color: #333;
-            margin: 0;
-            padding: 0;
-        }
-        header {
-            background-color: #ff66b2;
-            padding: 1em;
-            text-align: center;
-            color: white;
-        }
-        .contact-container {
-            padding: 30px;
-            max-width: 900px;
-            margin: auto;
-        }
-        .contact-item {
-            display: flex;
-            align-items: center;
-            margin-bottom: 30px;
-            background-color: #fff;
-            border-radius: 10px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-            overflow: hidden;
-        }
-        .contact-item img {
-            width: 200px;
-            height: auto;
-            object-fit: cover;
-        }
-        .contact-info {
-            padding: 20px;
-        }
-        .contact-info h3 {
-            margin-top: 0;
-            color: #ff3399;
-        }
-        .contact-info p {
-            margin: 8px 0;
-        }
-        .price {
-            font-weight: bold;
-            color: #444;
-        }
-</style>
-<section id="contact">
-        <h2>Contact</h2>
-        <p>Email: masekautusello@gmail.com</p>
-        <p>Phone: +266 63048093</p>
-    </section>
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #ffe4ec;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .contact-box {
+      background-color: #fff;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+      width: 100%;
+      max-width: 500px;
+    }
+
+    .contact-box h2 {
+      text-align: center;
+      color: #c71585;
+      margin-bottom: 20px;
+    }
+
+    .contact-box label {
+      display: block;
+      margin: 10px 0 5px;
+      font-weight: bold;
+    }
+
+    .contact-box input,
+    .contact-box textarea {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      box-sizing: border-box;
+    }
+
+    .contact-box textarea {
+      height: 100px;
+      resize: none;
+    }
+
+    .contact-box button {
+      margin-top: 15px;
+      width: 100%;
+      background-color: #c71585;
+      color: white;
+      padding: 12px;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    .contact-box button:hover {
+      background-color: #a0136e;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="contact-box">
+    <h2>Contact Us to Buy</h2>
+    <form action="mailto:your-email@example.com" method="POST" enctype="text/plain">
+      <label for="name">Full Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email Address:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="phone">Phone Number:</label>
+      <input type="text" id="phone" name="phone">
+
+      <label for="message">Your Message:</label>
+      <textarea id="message" name="message" required></textarea>
+
+      <button type="submit">Send Message</button>
+    </form>
+  </div>
+
+</body>
+</html>
+
+
+
